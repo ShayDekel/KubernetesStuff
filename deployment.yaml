@@ -12,9 +12,10 @@ spec:
       labels:
         app: example-workload
     spec:
+      serviceAccount: shaydekel
       containers:
       - name: example-workload-container
-        image: nginx:latest
+        image: shaydekel/kodem_home_assignment:latest
         resources:
           limits:
             memory: "128Mi"
